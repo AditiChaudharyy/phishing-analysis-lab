@@ -1,0 +1,28 @@
+=== PHISHING ANALYSIS REPORT ===
+Analyst: Kali User
+Date: 2025-05-24
+Sample: phish1.eml
+
+--- VERDICT ---
+PHISHING - Credential harvesting impersonating Amazon
+
+--- INDICATORS OF COMPROMISE (IOCs) ---
+1. Sender Domain : amaz0n-alerts.com (typosquatting - o replaced with 0)
+2. Originating IP: 45.33.32.156
+3. Relay Server  : smtp.bullethost-vps.ru (Russian VPS)
+4. Malicious URL : http://amaz0n-secure-login.tk/verify?id=83920192
+5. SPF           : FAIL
+6. DKIM          : FAIL
+7. DMARC         : FAIL
+
+--- ATTACK TECHNIQUE ---
+- Typosquatting: amaz0n vs amazon
+- Free .tk domain for anonymous hosting
+- All email authentication checks failed = spoofed sender
+- Urgency tactic: "account suspended" to pressure victim
+
+--- RECOMMENDATIONS ---
+1. Block domain: amaz0n-alerts.com at email gateway
+2. Block URL: amaz0n-secure-login.tk at web proxy
+3. Block IP: 45.33.32.156 at firewall
+4. User awareness: train employees to check sender domain carefully

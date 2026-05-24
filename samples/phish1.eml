@@ -1,0 +1,29 @@
+From: "Amazon Security" <security@amaz0n-alerts.com>
+To: victim@gmail.com
+Subject: Your Amazon account has been suspended
+Date: Sat, 24 May 2025 09:15:00 +0000
+Message-ID: <83920192.1234@amaz0n-alerts.com>
+MIME-Version: 1.0
+Received: from mail.amaz0n-alerts.com (192.168.45.231)
+        by mx.google.com with ESMTP
+Received: from smtp.bullethost-vps.ru (45.33.32.156)
+        by mail.amaz0n-alerts.com
+X-Originating-IP: 45.33.32.156
+Authentication-Results: mx.google.com;
+       spf=fail
+       dkim=fail
+       dmarc=fail
+
+Dear Customer,
+
+Unusual activity detected on your Amazon account.
+Please verify immediately:
+
+http://amaz0n-secure-login.tk/verify?id=83920192
+
+Amazon Security Team
+
+
+
+
+
